@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.HelloController">
+   <children>
+      <Text layoutX="228.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="За кого ты?">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#6b6b6b" layoutX="238.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сделай свой выбор" />
+      <VBox fx:id="grup" alignment="CENTER_LEFT" layoutX="110.0" layoutY="88.0" prefHeight="223.0" prefWidth="383.0" spacing="20.0">
+         <children>
+            <CheckBox fx:id="t1" mnemonicParsing="false" text="Ладимир Ладиморович Бунин">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="t2" mnemonicParsing="false" text="Филлип Бетросович Киркоров">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="t3" mnemonicParsing="false" text="SHAMAN">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="t4" mnemonicParsing="false" text="Александр Григорич Лукашенко">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="t5" mnemonicParsing="false" text="Николай Николаевич Ловягов">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </CheckBox>
+         </children>
+      </VBox>
+      <Button fx:id="but" layoutX="165.0" layoutY="335.0" mnemonicParsing="false" onAction="#Button" text="Сделать осознанный выбор">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Text fx:id="finalText" layoutX="170.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выбор сделан!" visible="false">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
